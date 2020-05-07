@@ -1,0 +1,28 @@
+<%- include('header') %>
+<%- include('nav') %>
+<script src="chat.js"></script>
+<main role="main" class="container content">
+<div class="row chat-content">
+  <div class="col-3 chat-list-container">
+    <ul class="user-list">
+    </ul>
+    <div class="alert visibility-hidden">No User Available to chat.</div>
+  </div>
+  <div class="col-8 message-container">
+    <div class="message-overlay">
+      <h3>  Select a User to chat.</h3>
+    </div>
+    <div class="message-wrapper visibility-hidden">
+      <div class="message-container">
+        <div class="opposite-user">Chatting with ----</div>
+        <ul class="message-thread">
+        </ul>
+      </div>
+      <div class="message-typer">
+        <textarea class="message form-control" placeholder="Type and hit Enter"></textarea>
+      </div>
+    </div>
+  </div>
+</div>
+</main>
+<%- include('footer') %>

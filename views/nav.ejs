@@ -1,0 +1,16 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+<script>
+  var currentUsername = '<%= user.username %>',
+    currentUserId = '<%= user._id %>';
+</script>
+<script src="socket.js"></script>
+<script src="nav.js"></script>
+<header class="app-header">
+  <nav class="navbar navbar-expand-md"><h4>Hello <%= user.username %></h4></nav>
+  <ul class="nav justify-content-end">
+    <li class="nav-item"><a class="nav-link" href="/home">Home</a></li>
+    <li class="nav-item"><a class="nav-link" href="/chat">Chat</a></li>
+    <li class="nav-item"><a class="nav-link" href="/aboutus">About us</a></li>
+    <li class="nav-item"><a class="nav-link" id="logout">Logout</a></li>
+  </ul>
+</header>
